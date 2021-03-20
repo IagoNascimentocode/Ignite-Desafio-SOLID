@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Request, Response } from "express";
 
 import { ListAllUsersUseCase } from "./ListAllUsersUseCase";
@@ -10,7 +11,7 @@ class ListAllUsersController {
 
     try {
       const allUsers = this.listAllUsersUseCase.execute({
-        user_id: String(user_id),
+        user_id: String(user_id)
       });
 
       return response.json(allUsers);
